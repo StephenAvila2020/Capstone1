@@ -1,46 +1,54 @@
 /* Import the google web fonts you want to use */
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
 
-/*Typography
---------------------------------------------------------------*/
-body,
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+body {
+    background-color: black;
+    background-image: url(https://store-images.s-microsoft.com/image/apps.20660.64366672042187759.338407e0-1372-451a-8800-aae18d4c72c2.7f12d862-297e-46fb-9e3c-e49be610d740?mode=scale&q=90&h=1080&w=1920);
+    /* background-position: right; */
+}
+
 button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: 'Comfortaa', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+    color: #404040;
+    font-family: 'Comfortaa', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Patua One', serif;
-  letter-spacing: 2px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Patua One', serif;
+    letter-spacing: 2px;
 }
 
-.section-container{
+.section-container {
     padding: 1.5em;
 }
 
-.section-content{
+.section-content {
     text-align: center;
 }
 
-.container-cards{
+.container-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.card{
+.card {
     width: 25vw;
     padding: 1em;
     margin: 1em;
     border: 1x solid gray;
 }
 
-img{
+img {
     display: block;
     height: auto;
     border-radius: 50%;
