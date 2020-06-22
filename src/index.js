@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom"
+import Survival from './components/Survival';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Survival/>
+    </Router>,
   document.getElementById('root')
 );
 
