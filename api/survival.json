@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Jarvis",
+      "email": "jarvis@avengers.com",
+      "password": "namuh"
+    },
+    {
+      "id": 2,
+      "username": "Ultron",
+      "email": "ultron@avengers.com",
+      "password": "ynot"
+    },
+    {
+      "email": "stephen.r.avila@gmail.com",
+      "password": "123456",
+      "username": "121",
+      "id": 3
+    }
+  ],
+  "usergroup": [
+    {
+      "id": 1,
+      "GroupId": 1,
+      "UserId": 1,
+      "creator": true
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Earth's Mightiest Heroes"
+    }
+  ]
+}
