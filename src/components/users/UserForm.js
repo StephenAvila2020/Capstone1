@@ -4,9 +4,9 @@ import './UserForm.css'
 
 class UserForm extends Component {
     state = {
+        username: "",
         email: "",
         password: "",
-        username: "",
         loadingStatus: false,
     };
 
@@ -21,14 +21,15 @@ class UserForm extends Component {
     */
     constructNewUser = evt => {
         evt.preventDefault();
-        if (this.state.email === "" ||  this.state.password === "" ||  this.state.username === ""  ) {
+        if (this.state.username === "" ||  this.state.email === "" ||  this.state.password === ""  ) {
             window.alert("Please input an User Name and Password");
         } else {
             this.setState({ loadingStatus: true });
             const user = {
+                username: this.state.username,
                 email: this.state.email,
                 password: this.state.password,
-                username: this.state.username
+                
             };
 
             // Create the user and redirect user to user list
