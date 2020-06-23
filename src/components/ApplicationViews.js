@@ -2,7 +2,7 @@
 import { Route, Redirect } from "react-router-dom"
 import React, { Component } from 'react'
 import Home from './home/Home'
-import ProfileCard from './profile/ProfileCard'
+import UserCard from './users/UserCard'
 import Login from './auth/Login'
 import UserForm from './users/UserForm'
 //only include these once they are built - previous practice exercise
@@ -20,25 +20,45 @@ class ApplicationViews extends Component {
 
 
     render() {
-        return (
-            <React.Fragment>
-                <Route path="/login" component={Login} />
+        return ( <
+            React.Fragment >
+            <
+            Route path = "/login"
+            component = { Login }
+            />
 
-                <Route exact path="/" render={(props) => {
-                    return <Home {...props} />
-                }} />
-                <Route path="/users/new" render={(props) => {
-                    return <UserForm {...props} />
-                }} />
+            <
+            Route exact path = "/"
+            render = {
+                (props) => {
+                    return <Home {...props }
+                    />
+                }
+            }
+            /> <
+            Route path = "/users/new"
+            render = {
+                (props) => {
+                    return <UserForm {...props }
+                    />
+                }
+            }
+            />
 
-                <Route exact path="/profile" render={props => {
+            <
+            Route exact path = "/users"
+            render = {
+                props => {
                     if (this.isAuthenticated()) {
-                        return <ProfileCard {...props} />
+                        return <UserCard {...props }
+                        />
                     } else {
-                        return <Redirect to="/login" />
+                        return <Redirect to = "/login" / >
                     }
-                }} />
-            </React.Fragment>
+                }
+            }
+            /> < /
+            React.Fragment >
         )
     }
 }
