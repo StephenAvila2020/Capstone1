@@ -23,7 +23,7 @@ import React, { Component } from 'react'
     componentDidMount(){
         console.log("User LIST: ComponentDidMount");
         //getAll from UserManager and hang on to that data; put it in state
-        UserManager.getAll()
+        UserManager.getAll(parseInt(localStorage.getItem("userId")))
         .then((users) => {
             this.setState({
                 users: users
@@ -31,14 +31,26 @@ import React, { Component } from 'react'
         })
     }
 
-    render(){
+    render() {
         console.log("User LIST: Render");
+       
+           
+        return (
+            <>
+            <section className="section-content">
+            <button type="button"
+                className="btn"
+                onClick={() => { this.props.history.push("/users/new") }}>
+                Enter User
+    </button>
+        </section>
+        
 
-        return(
             <div className="container-cards">
-                {this.state.users.map(user => 
-                <UserCard key={user.id} user={user} />)}
+                {this.state.users.map(user =>
+                    <UserCard key={user.id} user={user} deleteUser={this.deleteUser} {...this.props} />)}
             </div>
+                </>
         )
     }
 }

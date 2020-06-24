@@ -1,22 +1,31 @@
 {
   "users": [
     {
-      "id": 1,
       "username": "Jarvis",
       "email": "jarvis@avengers.com",
-      "password": "namuh"
+      "password": "namuh",
+      "rank": 3,
+      "about": "A.I. Constructed by Tony Stark. When in game, I primarily play solo, but I can come in clutch in SWF matches.",
+      "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
+      "id": 1
     },
     {
-      "id": 2,
       "username": "Ultron",
       "email": "ultron@avengers.com",
-      "password": "ynot"
+      "password": "ynot",
+      "rank": 3,
+      "about": "Hate working with others. Would rather sabotage the whole match and end up on the hook.",
+      "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
+      "id": 2
     },
     {
-      "email": "stephen.r.avila@gmail.com",
-      "password": "123456",
-      "username": "121",
-      "id": 3
+      "username": "IronMan1",
+      "email": "TonyStark@avengers.com",
+      "password": "321endgame",
+      "rank": "1",
+      "about": "Bit of a wildcard. Always the one to make the big plays to win the game. Great at looping.",
+      "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
+      "id": 4
     }
   ],
   "usergroup": [

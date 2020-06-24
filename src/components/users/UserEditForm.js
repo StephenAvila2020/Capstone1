@@ -5,9 +5,12 @@ import "./UserForm.css"
 class UserEditForm extends Component {
     //set the initial state
     state = {
+      username: "",
         email: "",
         password: "",
-        username: "",
+        rank: "",
+        about: "",
+        perk: "",
         loadingStatus: true,
     };
 
@@ -24,6 +27,9 @@ class UserEditForm extends Component {
         username: this.state.username,
                 email: this.state.email,
                 password: this.state.password,
+                rank: this.state.rank,
+                about: this.state.about,
+                perk: this.state.perk,
                 id: this.props.match.params.userId
       };
 
@@ -38,6 +44,9 @@ class UserEditForm extends Component {
             username: user.username,
             email: user.email,
             password: user.password,
+            rank: user.rank,
+            about: user.about,
+            perk: user.perk,
             loadingStatus: false,
           });
       });
@@ -78,6 +87,37 @@ class UserEditForm extends Component {
                 value={this.state.password}
               />
               <label htmlFor="password">Password</label>
+
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="rank"
+                value={this.state.rank}
+              />
+              <label htmlFor="rank">Rank</label>
+
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="about"
+                value={this.state.about}
+              />
+              <label htmlFor="about">About Me</label>
+
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="perk"
+                value={this.state.perk}
+              />
+              <label htmlFor="perk">Favorite Perks</label>
+
                     </div>
             <div className="alignRight">
               <button

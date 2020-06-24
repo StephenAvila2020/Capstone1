@@ -7,6 +7,9 @@ class UserForm extends Component {
         username: "",
         email: "",
         password: "",
+        rank: "",
+        about: "",
+        perk: "",
         loadingStatus: false,
     };
 
@@ -21,7 +24,7 @@ class UserForm extends Component {
     */
     constructNewUser = evt => {
         evt.preventDefault();
-        if (this.state.username === "" ||  this.state.email === "" ||  this.state.password === ""  ) {
+        if (this.state.username === "" ||  this.state.email === "" ||  this.state.password === "" ||  this.state.rank === "" ||  this.state.about === "" ||  this.state.perk === ""   ) {
             window.alert("Please input an User Name and Password");
         } else {
             this.setState({ loadingStatus: true });
@@ -29,6 +32,9 @@ class UserForm extends Component {
                 username: this.state.username,
                 email: this.state.email,
                 password: this.state.password,
+                rank: this.state.rank,
+                about: this.state.about,
+                perk: this.state.perk
                 
             };
 
@@ -69,6 +75,33 @@ class UserForm extends Component {
                         placeholder="username"
                         />
                         <label htmlFor="username">Username</label>
+
+                        <input
+                        type="text"
+                        required
+                        onChange={this.handleFieldChange}
+                        id="rank"
+                        placeholder="rank"
+                        />
+                        <label htmlFor="rank">Rank</label>
+
+                        <input
+                        type="text"
+                        required
+                        onChange={this.handleFieldChange}
+                        id="about"
+                        placeholder="about"
+                        />
+                        <label htmlFor="about">About Me</label>
+
+                        <input
+                        type="text"
+                        required
+                        onChange={this.handleFieldChange}
+                        id="perk"
+                        placeholder="perk"
+                        />
+                        <label htmlFor="perk">Favorite Perks</label>
                         
                     </div>
                     <div className="alignRight">

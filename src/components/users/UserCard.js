@@ -7,16 +7,19 @@ class UserCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <picture>
-            <img src={require("./user.jpg")} alt="My Dog" />
-          </picture>
+          {/* <picture>
+            <img src={this.props.user.image} alt="My Dog" />
+          </picture> */}
 
           <h3>
             
             <span className="card-username">{this.props.user.username}</span>
           </h3>
-          {/* <p>Date: {this.props.event.date}</p>
-          <p>Location: {this.props.event.location}</p> */}
+          <p>Email: {this.props.user.email}</p>
+          <p>Password: {this.props.user.password}</p>
+          <p>Rank: {this.props.user.rank}</p>
+          <p>About Me: {this.props.user.about}</p>
+          <p>Favorite Perks: {this.props.user.perk}</p>
           <Link to={`/users/${this.props.user.id}`}>
             <button>User Details</button>
           </Link>

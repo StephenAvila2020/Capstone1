@@ -8,8 +8,10 @@ class UserDetail extends Component {
     username: "",
     email: "",
     password: "",
-    
-      loadingStatus: true,
+    rank: "",
+    about: "",
+    perk: "",
+     loadingStatus: true,
   }
 
   componentDidMount(){
@@ -21,13 +23,16 @@ class UserDetail extends Component {
         username: user.username,
         email: user.email,
         password: user.password,
+        rank: user.rank,
+        about: user.about,
+        perk: user.perk,
         loadingStatus: false
       });
     });
   }
 
   handleDelete = () => {
-    //invoke the delete function in UserManger and re-direct to the animal list.
+    //invoke the delete function in UserManger and re-direct to the User list.
     this.setState({loadingStatus: true})
     UserManager.delete(this.props.userId)
     .then(() => this.props.history.push("/users"))
@@ -40,6 +45,9 @@ class UserDetail extends Component {
             <h3>Username: <span style={{ color: 'darkslategrey' }}>{this.state.username}</span></h3>
             <p>Email: {this.state.email}</p>
             <p>Password: {this.state.password}</p>
+            <p>Rank: {this.state.rank}</p>
+          <p>About Me: {this.state.about}</p>
+          <p>Favorite Perks: {this.state.perk}</p>
             <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Delete Account</button>
         </div>
       </div>

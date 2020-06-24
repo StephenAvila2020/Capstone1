@@ -8,8 +8,8 @@ class NavBar extends Component {
       <header>
         <h1 className="site-title">
           {" "}
-          Student Kennels <br />
-          <small> Loving care when you 're not there.</small>{" "}
+          The Survival Guide <br />
+          <small> </small>{" "}
         </h1>{" "}
         <nav>
           <ul className="container">
@@ -24,7 +24,7 @@ class NavBar extends Component {
               {" "}
               <Link className="nav-link" to="/users">
                 {" "}
-                My Profile{" "}
+                My Profile{""}
               </Link>{" "}
             </li>{" "}
             <li> New To the Fog </li> <li> Versus </li>{" "}

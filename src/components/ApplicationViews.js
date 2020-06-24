@@ -2,7 +2,7 @@
 import { Route, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Home from "./home/Home";
-import UserCard from "./users/UserCard";
+import UserList from "./users/UserList";
 import Login from "./auth/Login";
 import UserForm from "./users/UserForm";
 import UserDetail from './users/UserDetail'
@@ -31,7 +31,7 @@ class ApplicationViews extends Component {
 
         <Route exact path="/users" render={props => {
           if (this.isAuthenticated()) {
-            return <UserCard {...props} />
+            return <UserList {...props} />
           } else {
             return <Redirect to="/login" />
           }
@@ -39,7 +39,7 @@ class ApplicationViews extends Component {
 
         <Route exact path="/users/:userId(\d+)" render={(props) => {
           // Pass the userId to the UserDetailComponent
-          return <UserDetail eventId={parseInt(props.match.params.userId)} {...props} />
+          return <UserDetail userId={parseInt(props.match.params.userId)} {...props} />
         }} />
 
         <Route
