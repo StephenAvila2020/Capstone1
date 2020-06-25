@@ -1,9 +1,9 @@
 const remoteURL = "http://localhost:5002"
 
 export default {
-  // get (id) {
-  //   return fetch(`${remoteURL}/users?id=1`).then(result => result.json())
-  // },
+  getByEmail (email) {
+    return fetch(`${remoteURL}/users?email=${email}`).then(result => result.json())
+  },
   get(id) {
     return fetch(`${remoteURL}/users/${id}`).then(result => result.json())
   },

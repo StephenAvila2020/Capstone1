@@ -1,7 +1,7 @@
 // import { Route } from 'react-router-dom'
 import { Route, Redirect } from "react-router-dom";
 import React, { Component } from "react";
-import Home from "./home/Home";
+import ClassicFormPage from "./home/ClassicFormPage";
 import UserList from "./users/UserList";
 import Login from "./auth/Login";
 import UserForm from "./users/UserForm";
@@ -17,12 +17,12 @@ class ApplicationViews extends Component {
   render() {
     return (
       <React.Fragment>
-        <Route path="/login" component={Login} />
+        <Route path="/" component={Login} />
         <Route
           exact
           path="/"
           render={(props) => {
-            return <Home {...props} />;
+            return <ClassicFormPage {...props} />;
           }}
         />{" "}
          <Route path="/users/new" render={(props) => {

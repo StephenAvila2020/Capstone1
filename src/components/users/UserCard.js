@@ -2,9 +2,16 @@ import React, { Component } from "react";
 import "./User.css";
 import { Link } from "react-router-dom";
 
+
+
+
 class UserCard extends Component {
   render() {
+    
     return (
+     
+     
+       
       <div className="card">
         <div className="card-content">
           {/* <picture>
@@ -13,7 +20,7 @@ class UserCard extends Component {
 
           <h3>
             
-            <span className="card-username">{this.props.user.username}</span>
+            <span className="">{this.props.user.username}</span>
           </h3>
           <p>Email: {this.props.user.email}</p>
           <p>Password: {this.props.user.password}</p>

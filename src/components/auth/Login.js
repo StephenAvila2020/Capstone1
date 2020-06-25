@@ -1,4 +1,29 @@
 import React, { Component } from "react"
+import UserManager from "../../modules/UserManager"
+import { BrowserRouter as Router } from 'react-router-dom';
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBMask,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBBtn,
+  MDBView,
+  MDBContainer,
+  MDBCard,
+  MDBCardBody,
+  MDBInput,
+  MDBFormInline,
+  MDBAnimation
+} from 'mdbreact';
+
+
 
 class Login extends Component {
 
@@ -21,20 +46,35 @@ class Login extends Component {
         For now, just store the email and password that
         the customer enters into local storage.
     */
-    localStorage.setItem(
-        "credentials",
-        JSON.stringify({
-            email: this.state.email,
-            password: this.state.password
-        })
-    )
-    this.props.history.push("/users");
+    UserManager.getByEmail(this.state.email)
+    .then((users) => {
+      console.log(users)
+      if(users[0] === undefined ) {
+        window.alert("User not found!")
+      }
+      else{
+        localStorage.setItem(
+          "credentials",
+          JSON.stringify({
+              email: this.state.email,
+              password: this.state.password,
+              id:users[0].id
+          })
+      )
+      this.props.history.push("/users");
+      }
+    })
+
+
+   
 
   }
 
   render() {
     return (
+     
       <form onSubmit={this.handleLogin}>
+         
         <fieldset>
             <h3>Please sign in</h3>
             <div className="formgrid">
@@ -55,16 +95,21 @@ class Login extends Component {
             </button>
         </fieldset>
         <section className="section-content">
-                    <button type="button"
+        <MDBBtn color='orange'  type="button"
                         className="btn"
                         onClick={() => { this.props.history.push("/users/new") }}>
                         Register User
-  </button>
+  </MDBBtn>
                 </section>
+                
       </form>
+     
+      
     )
   }
 
 }
 
 export default Login
+
+

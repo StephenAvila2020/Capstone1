@@ -26,6 +26,15 @@
       "about": "Bit of a wildcard. Always the one to make the big plays to win the game. Great at looping.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
       "id": 4
+    },
+    {
+      "username": "PointBreak",
+      "email": "Thor@avengers.com",
+      "password": "godofthunder",
+      "rank": "1",
+      "about": "God of Thunder",
+      "perk": "All of them",
+      "id": 5
     }
   ],
   "usergroup": [

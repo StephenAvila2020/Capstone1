@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NavBar from "./nav/NavBar"
+import ClassicFormPage from "./home/ClassicFormPage"
 import ApplicationViews from "./ApplicationViews"
 import './Survival.css'
 
@@ -7,7 +7,7 @@ class Survival extends Component {
     render() {
         return (
             <>
-            <NavBar />
+            
             <ApplicationViews />
           </>
      
