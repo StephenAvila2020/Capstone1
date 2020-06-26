@@ -39,16 +39,6 @@ import React, { Component } from 'react'
         return (
             <>
             
-            
-
-            <section className="section-content">
-            <button type="button"
-                className="btn"
-                onClick={() => { this.props.history.push("/users/new") }}>
-                Enter User
-    </button>
-        </section>
-        
 
             <div className="container-cards">
                 {this.state.users.map(user =>

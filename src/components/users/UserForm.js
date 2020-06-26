@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import UserManager from '../../modules/UserManager';
 import './UserForm.css'
 
+
 class UserForm extends Component {
     state = {
         username: "",
@@ -48,6 +49,7 @@ class UserForm extends Component {
 
         return(
             <>
+             
             <form>
                 <fieldset>
                     <div className="formgrid">
@@ -109,11 +111,13 @@ class UserForm extends Component {
                         type="button"
                         disabled={this.state.loadingStatus}
                         onClick={this.constructNewUser}
-                        >Register User</button>
+                        >New User</button>
                     </div>
                 </fieldset>
             </form>
+            
         </>
+        
         )
     }
 }

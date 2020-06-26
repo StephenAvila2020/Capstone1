@@ -1,27 +1,7 @@
 import React, { Component } from "react"
 import UserManager from "../../modules/UserManager"
 import { BrowserRouter as Router } from 'react-router-dom';
-import {
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarNav,
-  MDBNavItem,
-  MDBNavLink,
-  MDBNavbarToggler,
-  MDBCollapse,
-  MDBMask,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-  MDBBtn,
-  MDBView,
-  MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-  MDBFormInline,
-  MDBAnimation
-} from 'mdbreact';
+
 
 
 
@@ -71,38 +51,49 @@ class Login extends Component {
   }
 
   render() {
+    
     return (
      
-      <form onSubmit={this.handleLogin}>
-         
-        <fieldset>
-            <h3>Please sign in</h3>
-            <div className="formgrid">
-                <input onChange={this.handleFieldChange} type="email"
-                    id="email"
-                    placeholder="Email address"
-                    required="" autoFocus="" />
-                <label htmlFor="inputEmail">Email address</label>
+        
+       <form className="form"   onSubmit={this.handleLogin}
+       >   
+     
+     <fieldset>
+     
+         <h3>Please sign in</h3>
+         <div className="formgrid">
+             <input onChange={this.handleFieldChange} type="email"
+                 id="email"
+                 placeholder="Email address"
+                 required="" autoFocus="" />
+             <label htmlFor="inputEmail">Email address</label>
 
-                <input onChange={this.handleFieldChange} type="password"
-                    id="password"
-                    placeholder="Password"
-                    required="" />
-                <label htmlFor="inputPassword">Password</label>
-            </div>
-            <button type="submit">
-                Sign in
-            </button>
-        </fieldset>
-        <section className="section-content">
-        <MDBBtn color='orange'  type="button"
-                        className="btn"
-                        onClick={() => { this.props.history.push("/users/new") }}>
-                        Register User
-  </MDBBtn>
-                </section>
-                
-      </form>
+             <input onChange={this.handleFieldChange} type="password"
+                 id="password"
+                 placeholder="Password"
+                 required="" />
+             <label htmlFor="inputPassword">Password</label>
+         </div>
+         <button type="submit">
+             Sign in
+         </button>
+         <section>
+         <button  type="button"
+                     
+                     onClick={() => { this.props.history.push("/users/new") }}>
+                     New User
+</button>
+</section>
+</fieldset>
+</form>
+     
+     
+             
+             
+   
+  
+      
+      
      
       
     )

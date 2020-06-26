@@ -1,78 +1,30 @@
-/* small {
-    font-size: 75%;
+nav {
+    background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+    
 }
-
-header {}
-
-.site-title {
-    color: ghostwhite;
-    text-align: center;
-}
-
-nav .container {
-    display: flex;
+  
+  nav .container {
+    display:flex;
     padding: 0;
-    margin-bottom: 0;
-}
-
-nav .container li {
+    margin-bottom:0em ;
+    width: 100%;
+  }
+  
+  nav .container li {
     flex: 1;
-    padding: 1px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.em;
     color: cornsilk;
     box-sizing: border-box;
-    background-color: cornflowerblue;
-    list-style-type: none;
-}
-
-nav .container a {
-    color: cornsilk;
-}
-
-nav .container a:hover {
-    color: maroon;
-} 
-
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.css";
-
-class NavBar extends Component {
-  render() {
-    return (
-     
-      <header>
-        <h1 className="site-title">
-          {" "}
-          The Survival Guide <br />
-          <small> </small>{" "}
-        </h1>{" "}
-        <nav>
-          <ul className="container">
-            <li>
-              {" "}
-              <Link className="nav-link" to="/">
-                {" "}
-                Home{" "}
-              </Link>{" "}
-            </li>{" "}
-            <li>
-              {" "}
-              <Link className="nav-link" to="/users">
-                {" "}
-                My Profile{""}
-              </Link>{" "}
-            </li>{" "}
-            <li> New To the Fog </li> <li> Versus </li>{" "}
-            <li> Survive With Friends </li>{" "}
-          </ul>{" "}
-        </nav>{" "}
-      </header> 
-        
-        
-    );
+    background-color: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+    width: 100%;
   }
-}
-
-export default NavBar; */
+  
+  nav .container a {
+    color: cornsilk;
+    width: 100%;
+  }
+  
+  nav .container a:hover {
+    color: maroon;
+  }

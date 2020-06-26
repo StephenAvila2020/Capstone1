@@ -1,6 +1,27 @@
 import React, { Component } from "react"
 import UserManager from "../../modules/UserManager"
 import "./UserForm.css"
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBMask,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBBtn,
+  MDBView,
+  MDBContainer,
+  MDBCard,
+  MDBCardBody,
+  MDBInput,
+  MDBFormInline,
+  MDBAnimation
+} from 'mdbreact';
 
 class UserEditForm extends Component {
     //set the initial state
@@ -55,6 +76,7 @@ class UserEditForm extends Component {
     render() {
       return (
         <>
+        
         <form>
           <fieldset>
           <div className="formgrid">
@@ -128,6 +150,7 @@ class UserEditForm extends Component {
             </div>
           </fieldset>
         </form>
+        
         </>
       );
     }

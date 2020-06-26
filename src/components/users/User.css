@@ -1,25 +1,38 @@
-
-  
+.section-content {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+  .card-content {
+    background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+  }
   .card-content h3 {
     margin-top: 0;
-    margin-bottom: .5em;
     font-weight: bold;
-    color: rgb(43, 112, 241);
+    color: rgb(243, 117, 0);
+    background-color:dimgray;
+    width: 50%;
+    
+    
   }
   
   .card-content p {
     font-size: 80%;
-    color: darkslategrey;
+    color: rgb(0, 0, 0);
+    background-color:dimgray;
+    padding: 10px;
+    margin: .1px;
+    width: 50%;
+  
   }
   
   .content-username {
     color: darkslategrey;
+    
   }
   
   .card button {
-    background-color: cornflowerblue;
+    background-color: rgb(253, 93, 0);
     border: none;
-    color: cornsilk;
+    color: rgb(0, 2, 1);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -30,6 +43,8 @@
     width: 100%;
   }
   
-  .card button:hover {
-    background-color: darkblue;
+ 
+
+  html {
+    background-image:url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
   }

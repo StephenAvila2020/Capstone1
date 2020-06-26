@@ -4,7 +4,7 @@
       "username": "Jarvis",
       "email": "jarvis@avengers.com",
       "password": "namuh",
-      "rank": 3,
+      "rank": "1",
       "about": "A.I. Constructed by Tony Stark. When in game, I primarily play solo, but I can come in clutch in SWF matches.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
       "id": 1
@@ -35,6 +35,15 @@
       "about": "God of Thunder",
       "perk": "All of them",
       "id": 5
+    },
+    {
+      "username": "Barton",
+      "email": "hawkeye@avengers.com",
+      "password": "perfectshot",
+      "rank": "2",
+      "about": "Never miss my shots",
+      "perk": "none",
+      "id": 6
     }
   ],
   "usergroup": [
