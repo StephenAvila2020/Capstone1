@@ -1,27 +1,7 @@
 import React, { Component } from "react"
 import UserManager from "../../modules/UserManager"
 import "./UserForm.css"
-import {
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarNav,
-  MDBNavItem,
-  MDBNavLink,
-  MDBNavbarToggler,
-  MDBCollapse,
-  MDBMask,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-  MDBBtn,
-  MDBView,
-  MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-  MDBFormInline,
-  MDBAnimation
-} from 'mdbreact';
+
 
 class UserEditForm extends Component {
     //set the initial state
@@ -32,6 +12,7 @@ class UserEditForm extends Component {
         rank: "",
         about: "",
         perk: "",
+        image: "",
         loadingStatus: true,
     };
 
@@ -51,6 +32,7 @@ class UserEditForm extends Component {
                 rank: this.state.rank,
                 about: this.state.about,
                 perk: this.state.perk,
+                image: this.state.image,
                 id: this.props.match.params.userId
       };
 
@@ -68,6 +50,7 @@ class UserEditForm extends Component {
             rank: user.rank,
             about: user.about,
             perk: user.perk,
+            image: user.image,
             loadingStatus: false,
           });
       });
@@ -80,6 +63,15 @@ class UserEditForm extends Component {
         <form>
           <fieldset>
           <div className="formgrid">
+          <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="image"
+                value={this.state.image}
+              />
+              <label htmlFor="image">Profile Picture</label>
           <input
                 type="text"
                 required

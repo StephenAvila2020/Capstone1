@@ -45,6 +45,25 @@
   
  
 
-  html {
+  /* html {
     background-image:url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+  } */
+
+  .container-cards {
+   background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+
+  }
+
+  .card-body {
+    background-color: dimgray;
+    color: ghostwhite;
+    border: solid orangered
+  }
+  p {
+    color: ghostwhite;
+  }
+  .card-img-top.profilepic {
+    border: orangered solid;
+    
+
   }

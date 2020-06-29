@@ -1,6 +1,6 @@
 
  fieldset {
- width: 100%;
+ width: 45%;
  height:20%;
   padding: 2px;
   margin: 2em auto;
@@ -10,7 +10,8 @@
   background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
   align-items: center;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.0em;
+
   
 }
  

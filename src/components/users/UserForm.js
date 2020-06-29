@@ -11,6 +11,7 @@ class UserForm extends Component {
         rank: "",
         about: "",
         perk: "",
+        image:"",
         loadingStatus: false,
     };
 
@@ -35,7 +36,8 @@ class UserForm extends Component {
                 password: this.state.password,
                 rank: this.state.rank,
                 about: this.state.about,
-                perk: this.state.perk
+                perk: this.state.perk,
+                image: this.state.image
                 
             };
 
@@ -53,6 +55,14 @@ class UserForm extends Component {
             <form>
                 <fieldset>
                     <div className="formgrid">
+                    <input
+                        type="text"
+                        required
+                        onChange={this.handleFieldChange}
+                        id="image"
+                        placeholder="image"
+                        />
+                        <label htmlFor="image">Profile Picture</label>
                         <input
                         type="text"
                         required

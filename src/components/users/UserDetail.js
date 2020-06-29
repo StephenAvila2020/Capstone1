@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import UserManager from '../../modules/UserManager';
 import './UserDetail.css'
+import Card from 'react-bootstrap/Card';
 
 class UserDetail extends Component {
 
@@ -11,6 +12,7 @@ class UserDetail extends Component {
     rank: "",
     about: "",
     perk: "",
+    image: "",
      loadingStatus: true,
   }
 
@@ -26,6 +28,7 @@ class UserDetail extends Component {
         rank: user.rank,
         about: user.about,
         perk: user.perk,
+        image: user.image,
         loadingStatus: false
       });
     });
@@ -40,19 +43,23 @@ class UserDetail extends Component {
 
   render() {
     return (
-      <div className="card">
-        <div className="card-content">
-            <h3>Username: <span style={{ color: 'darkslategrey' }}>{this.state.username}</span></h3>
-            <p>Email: {this.state.email}</p>
-            <p>Password: {this.state.password}</p>
-            <p>Rank: {this.state.rank}</p>
-          <p>About Me: {this.state.about}</p>
-          <p>Favorite Perks: {this.state.perk}</p>
-            <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Delete Account</button>
-        </div>
-      </div>
+      <Card  style={{ width: '40%' }}>
+      <Card.Img className="profilepic" variant="top" src= {this.state.image}  />
+      <Card.Body>
+        <Card.Title><span className="">{this.state.username}</span></Card.Title>
+        <Card.Text>
+        <p>Email: {this.state.email}</p>
+              <p>Password: {this.state.password}</p>
+              <p>Rank: {this.state.rank}</p>
+              <p>About Me: {this.state.about}</p>
+              <p>Favorite Perks: {this.state.perk}</p>
+        </Card.Text>
+        <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Delete Account</button>
+      </Card.Body>
+    </Card>
     );
   }
 }
 
 export default UserDetail;
+

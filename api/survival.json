@@ -3,10 +3,11 @@
     {
       "username": "Jarvis",
       "email": "jarvis@avengers.com",
-      "password": "namuh",
+      "password": "namuh1",
       "rank": "1",
       "about": "A.I. Constructed by Tony Stark. When in game, I primarily play solo, but I can come in clutch in SWF matches.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
+      "image": "https://mcuexchange.com/wp-content/uploads/2017/07/Vision_Forest.jpg",
       "id": 1
     },
     {
@@ -16,6 +17,7 @@
       "rank": 3,
       "about": "Hate working with others. Would rather sabotage the whole match and end up on the hook.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
+      "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/061ult_ons_mas_mob_01_0.jpg",
       "id": 2
     },
     {
@@ -31,9 +33,10 @@
       "username": "PointBreak",
       "email": "Thor@avengers.com",
       "password": "godofthunder",
-      "rank": "1",
+      "rank": "6",
       "about": "God of Thunder",
       "perk": "All of them",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/disney-TDW0NNG1-Full-Image_GalleryBackground-en-US-1483993494274._SX1080_.jpg",
       "id": 5
     },
     {

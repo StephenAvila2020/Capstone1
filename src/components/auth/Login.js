@@ -10,7 +10,8 @@ class Login extends Component {
   // Set initial state
   state = {
     email: "",
-    password: ""
+    password: "",
+    loggedIn: false,
   }
 
   // Update state whenever an input field is edited

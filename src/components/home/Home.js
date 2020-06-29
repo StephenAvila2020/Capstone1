@@ -27,48 +27,22 @@ import './Home.css';
 
 class Home extends React.Component {
   state = {
-    collapseID: ''
+    
   };
 
-  toggleCollapse = collapseID => () =>
-    this.setState(prevState => ({
-      collapseID: prevState.collapseID !== collapseID ? collapseID : ''
-    }));
-
-  componentDidMount() {
-    document.querySelector('nav').style.height = '65px';
-  }
-
-  componentWillUnmount() {
-    document.querySelector('nav').style.height = 'auto';
-  }
-
   render() {
-    const { collapseID } = this.state;
-    const overlay = (
-      <div
-        id='sidenav-overlay'
-        style={{ backgroundColor: 'transparent' }}
-        onClick={this.toggleCollapse('navbarCollapse')}
-      />
-    );
+    
+  
     return (
       <div id='classicformpage'>
         <Router>
-        <div>
-            <MDBNavbar
-              scrolling
-              fixed='bottom' 
-            >
-            </MDBNavbar>
-            {collapseID && overlay}
-          </div>
-        </Router>
+        
+         </Router>
 
-        <MDBView>
+        { <MDBView>
           <MDBMask className='d-flex justify-content-center align-items-center gradient' />
           <MDBContainer
-            style={{ height: '100%', width: '100%', paddingTop: '10rem' }}
+            style={{ height: '100%', width: '100%', paddingTop: '1rem' }}
             className='mt-5  d-flex justify-content-center align-items-center'
           >
             <MDBRow>
@@ -76,7 +50,7 @@ class Home extends React.Component {
                 type='fadeInLeft'
                 delay='.3s'
                 className='white-text text-center text-md-left col-md-6 mt-xl-5 mb-5'
-              >
+              > 
                 <h1 className='h1-responsive font-weight-bold'>
                   The Entity Welcomes You!
                 </h1>
@@ -95,7 +69,7 @@ class Home extends React.Component {
              
             </MDBRow>
           </MDBContainer>
-        </MDBView>
+        </MDBView> }
 
         
       </div>

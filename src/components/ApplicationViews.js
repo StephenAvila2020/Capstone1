@@ -14,6 +14,8 @@ class ApplicationViews extends Component {
   //returns true/false
   isAuthenticated = () => localStorage.getItem("credentials") !== null;
 
+  
+
   render() {
     return (
       <React.Fragment>
@@ -30,11 +32,7 @@ class ApplicationViews extends Component {
         }} />
 
         <Route exact path="/users" render={props => {
-          if (this.isAuthenticated()) {
-            return <UserList {...props} />
-          } else {
-            return <Redirect to="/login" />
-          }
+          return <UserList {...props} />
         }} />
 
         <Route exact path="/users/:userId(\d+)" render={(props) => {

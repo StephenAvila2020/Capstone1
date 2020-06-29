@@ -5,11 +5,28 @@ import './Survival.css'
 import NavBar from "./nav/NavBar"
 
 class Survival extends Component {
+
+    state = {
+        loggedIn: false,
+    }
+
+    handleLoginChange = () =>
+    this.setState({loggedIn: true})
+
+    handleLogoutChange = () => {
+        this.setState({loggedIn: false}); localStorage.clear()
+    }
+
     render() {
         return (
             <>
-            <NavBar />
-            <ApplicationViews />
+            <NavBar
+            loggedIn={this.state.loggedIn}
+            handleLogoutChange={this.handleLogoutChange}
+            />
+            <ApplicationViews 
+            handleLoginChange={this.handleLoginChange}
+            />
           </>
      
 	
