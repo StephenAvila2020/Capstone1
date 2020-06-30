@@ -40,6 +40,7 @@
   p {
 
     background-color: rgb(107, 105, 105);
+    border: orangered solid;
   }
   .card-img-top.profilepic {
     border: orangered solid;
