@@ -1,22 +1,6 @@
 .section-content {
   background-color: rgba(0, 0, 0, 0.829);
 }
-  .card-content {
-    background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;;
-  }
-  .card-content h3 {
-    margin-top: 0;
-    font-weight: bold;
-    color: rgb(243, 117, 0);
-    background-color:dimgray;
-    width: 50%;
-    
-    
-  }
   
   .card-content p {
     font-size: 80%;
@@ -48,31 +32,27 @@
   
  
 
-  .container-cards {
-    background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;
-  }
-
   .card-body {
     background-color: dimgray;
     color: ghostwhite;
     border: solid orangered
   }
   p {
-    color: ghostwhite;
+
+    background-color: rgb(107, 105, 105);
   }
   .card-img-top.profilepic {
     border: orangered solid;
     
 
   }
- .card {
-  background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  min-height: 100vh;
+ 
+
+
+ div.card {
+background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+background-repeat: no-repeat;
+background-size: cover;
  }
+
+ 
