@@ -11,7 +11,9 @@ class UserCard extends Component {
     
     return (
      
-     
+     <div className="card">
+       
+        
        
       <Card  style={{ width: '40%' }}>
       <Card.Img className="profilepic" variant="top" src= {this.props.user.image}  />
@@ -37,6 +39,9 @@ class UserCard extends Component {
               </button>
       </Card.Body>
     </Card>
+    
+    
+    </div>
     );
   }
 }

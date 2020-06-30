@@ -8,7 +8,8 @@
       "about": "A.I. Constructed by Tony Stark. When in game, I primarily play solo, but I can come in clutch in SWF matches.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
       "image": "https://mcuexchange.com/wp-content/uploads/2017/07/Vision_Forest.jpg",
-      "id": 1
+      "id": 1,
+      "groupId": 1
     },
     {
       "username": "Ultron",
@@ -18,7 +19,8 @@
       "about": "Hate working with others. Would rather sabotage the whole match and end up on the hook.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
       "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/061ult_ons_mas_mob_01_0.jpg",
-      "id": 2
+      "id": 2,
+      "groupId": 1
     },
     {
       "username": "IronMan1",
@@ -27,6 +29,7 @@
       "rank": "1",
       "about": "Bit of a wildcard. Always the one to make the big plays to win the game. Great at looping.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
+      "image": "https://www.screengeek.net/wp-content/uploads/2019/11/mcu-tony-stark-avengers-endgame.jpg",
       "id": 4
     },
     {
@@ -37,7 +40,8 @@
       "about": "God of Thunder",
       "perk": "All of them",
       "image": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/disney-TDW0NNG1-Full-Image_GalleryBackground-en-US-1483993494274._SX1080_.jpg",
-      "id": 5
+      "id": 5,
+      "groupId": 1
     },
     {
       "username": "Barton",
@@ -46,7 +50,19 @@
       "rank": "2",
       "about": "Never miss my shots",
       "perk": "none",
+      "image": "https://www.slashfilm.com/wp/wp-content/images/hawkeye-series-at-comic-con.jpg",
       "id": 6
+    },
+    {
+      "username": "ElCaptain",
+      "email": "SteveRogers@avengers.com",
+      "password": "captain1",
+      "rank": "1",
+      "about": "New to this ",
+      "perk": "Tony set up my account",
+      "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2019/05/Chris-Evans-as-Captain-America-in-the-Quantum-Realm.jpg",
+      "id": 7,
+      "groupId": 1
     }
   ],
   "usergroup": [

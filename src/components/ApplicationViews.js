@@ -7,6 +7,8 @@ import Login from "./auth/Login";
 import UserForm from "./users/UserForm";
 import UserDetail from './users/UserDetail'
 import UserEditForm from './users/UserEditForm'
+import GroupList from './groups/GroupList'
+import GroupWithUsers from './groups/GroupWithUsers'
 //only include these once they are built - previous practice exercise
 
 class ApplicationViews extends Component {
@@ -32,7 +34,11 @@ class ApplicationViews extends Component {
         }} />
 
         <Route exact path="/users" render={props => {
-          return <UserList {...props} />
+          if (this.isAuthenticated()) {
+            return <UserList {...props} />
+        } else {
+            return <Redirect to="/login" />
+        }
         }} />
 
         <Route exact path="/users/:userId(\d+)" render={(props) => {
@@ -45,6 +51,12 @@ class ApplicationViews extends Component {
             return <UserEditForm {...props} />
           }}
         />
+        <Route exact path="/groups" render={(props) => {
+          return <GroupList {...props} />
+        }} />
+        <Route path="/groups/:groupId(\d+)" render={(props) => {
+    return <GroupWithUsers {...props} />
+}} />
       </React.Fragment>
     );
   }

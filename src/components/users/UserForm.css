@@ -1,35 +1,35 @@
-
- fieldset {
- width: 45%;
- height:20%;
-  padding: 2px;
-  margin: 2em auto;
-  color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 2px;
+html {
   background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
-  align-items: center;
-  position: relative;
-  font-size: 1.0em;
-
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
 }
  
- 
 
+fieldset {
+  background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
 
  fieldset input, fieldset button{
   box-sizing: border-box;
-  padding: .2em .4em;
+  padding: .4em .4em;
   margin: .2em 0;
   outline: none;
   box-shadow: none;
+  background-color: white;
+  border: dimgray solid 1px;
 }
 
 fieldset button {
   max-width: 9em;
   padding: .5em;
-  margin: .3em auto;
+  margin: .6em auto;
+  border: dimgray solid 1px;
   background-color: rgb(255, 123, 0);
   border: none;
   color: rgba(255, 255, 255, 0.952);
@@ -46,6 +46,7 @@ fieldset label {
   box-sizing: border-box;
   user-select: none;
   cursor: pointer;
+  
 }
 fieldset input:focus + label {
   color: #933;
@@ -58,16 +59,21 @@ fieldset .formgrid {
   grid-auto-flow: dense;
   align-items: right;
   justify-content: right;
+  color:white;
 } 
 
  fieldset input, fieldset button {
   grid-column: 2 /4;
   width: 50%;
-  margin: 0
+  margin: 0;
+  border: dimgray solid 1px;
 } 
 
 fieldset .alignRight {
   text-align: right;
+}
+h3{
+  color: white;
 }
 
 

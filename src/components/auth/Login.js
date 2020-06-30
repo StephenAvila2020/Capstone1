@@ -5,13 +5,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 
 
+
 class Login extends Component {
 
   // Set initial state
   state = {
     email: "",
     password: "",
-    loggedIn: false,
   }
 
   // Update state whenever an input field is edited

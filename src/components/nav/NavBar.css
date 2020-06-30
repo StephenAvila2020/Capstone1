@@ -1,6 +1,6 @@
 nav {
     background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
-    
+    width: 100%;
 }
   
   nav .container {
@@ -16,8 +16,9 @@ nav {
     font-size: 1.em;
     color: cornsilk;
     box-sizing: border-box;
-    background-color: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+    background-color: grey;
     width: 100%;
+    border: black solid;
   }
   
   nav .container a {
