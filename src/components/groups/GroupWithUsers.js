@@ -22,7 +22,7 @@ class GroupWithUsers extends Component {
     render(){
         return (
           <div className="card">
-            <p>Group: {this.state.group.name}</p>
+            <h1>Group: {this.state.group.name}</h1>
             {this.state.users.map(user =>
               <UserCard
                 key={user.id}

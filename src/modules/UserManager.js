@@ -10,6 +10,9 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/users`).then(result => result.json())
   },
+  getUserGroup(id) {
+    return fetch(`${remoteURL}/users/${id}?_expand=group`).then(result => result.json())
+  },
   delete(id) {
     return fetch(`http://localhost:5002/users/${id}`, {
         method: "DELETE"

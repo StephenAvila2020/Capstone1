@@ -41,11 +41,17 @@
 
     background-color: rgb(107, 105, 105);
     border: orangered solid;
+    color: ghostwhite;
+    margin: .5em;
+    padding: .5em;
   }
   .card-img-top.profilepic {
     border: orangered solid;
     
 
+  }
+  .card-text {
+    border: none;
   }
  
 

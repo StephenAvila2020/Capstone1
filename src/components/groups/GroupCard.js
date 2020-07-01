@@ -9,7 +9,7 @@ class GroupCard extends Component {
       <div className="card">
         <div className="card-content">
          
-          <h3>Name: <span className="card-groupname">{this.props.group.name}</span></h3>
+          <h1>Team: <span className="card-groupname">{this.props.group.name}</span></h1>
           <button type="button"
         onClick={() => { this.props.history.push(`/groups/${this.props.group.id}`) }}>Details</button>
         </div>

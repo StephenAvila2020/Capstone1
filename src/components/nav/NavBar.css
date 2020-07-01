@@ -1,6 +1,7 @@
 nav {
-    background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
     width: 100%;
+    border: orangered solid;
+    background-color: black;
 }
   
   nav .container {
@@ -16,7 +17,7 @@ nav {
     font-size: 1.em;
     color: cornsilk;
     box-sizing: border-box;
-    background-color: grey;
+    background-color:black;
     width: 100%;
     border: black solid;
   }

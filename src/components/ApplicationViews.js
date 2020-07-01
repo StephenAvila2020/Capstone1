@@ -5,7 +5,7 @@ import Home from "./home/Home";
 import UserList from "./users/UserList";
 import Login from "./auth/Login";
 import UserForm from "./users/UserForm";
-import UserDetail from './users/UserDetail'
+// import UserDetail from './users/UserDetail'
 import UserEditForm from './users/UserEditForm'
 import GroupList from './groups/GroupList'
 import GroupWithUsers from './groups/GroupWithUsers'
@@ -41,10 +41,10 @@ class ApplicationViews extends Component {
         }
         }} />
 
-        <Route exact path="/users/:userId(\d+)" render={(props) => {
+        {/* <Route exact path="/users/:userId(\d+)" render={(props) => {
           // Pass the userId to the UserDetailComponent
           return <UserDetail userId={parseInt(props.match.params.userId)} {...props} />
-        }} />
+        }} /> */}
 
         <Route
           path="/users/:userId(\d+)/edit" render={props => {
