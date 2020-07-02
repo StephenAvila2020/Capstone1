@@ -28,7 +28,6 @@ class UserCard extends Component {
               <p>Rank: {this.props.user.rank}</p>
               <p>About Me: {this.props.user.about}</p>
               <p>Favorite Perks: {this.props.user.perk}</p>
-              <p>Team: {this.props.user.groupId}</p>
         </Card.Text>
         <button type="button"  onClick={this.handleDelete}>Delete Account</button>
               <button

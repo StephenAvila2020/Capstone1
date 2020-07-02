@@ -8,7 +8,17 @@ class GroupList extends Component {
     state = {
         groups: [],
     }
-
+    deleteGroup = id => {
+        GroupManager.delete(id)
+            .then(() => {
+                GroupManager.getAll()
+                    .then((newGroups) => {
+                        this.setState({
+                            groups: newGroups
+                        })
+                    })
+            })
+    }
 componentDidMount(){
     console.log("Group LIST: ComponentDidMount");
     //getAll from GroupManager and hang on to that data; put it in state
@@ -25,7 +35,12 @@ render(){
 
     return(
         <div className="container-cards">
-            {this.state.groups.map(group => <GroupCard key={group.id} group={group} {...this.props}
+            <h1><button  type="button"
+                     
+                     onClick={() => { this.props.history.push("/groups/new") }}>
+                     Create New Group
+</button></h1>
+            {this.state.groups.map(group => <GroupCard key={group.id} group={group} deleteGroup={this.deleteGroup} {...this.props}
             />)}
         </div>
     )

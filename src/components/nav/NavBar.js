@@ -17,7 +17,7 @@ class NavBar extends Component {
             <li><Link className="nav-link" to="/users">My Profile</Link></li>
             <li><Link className="nav-link" to="/login">Login</Link></li>
             <li><Link className="nav-link" to="/groups">Survive With Friends</Link></li>
-            <li>Around the Campfire</li>
+            <li><Link className="nav-link" to="/achievements">Achievements</Link></li>
           </ul>
         </nav>
         

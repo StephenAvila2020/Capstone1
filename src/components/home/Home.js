@@ -22,6 +22,7 @@ import {
   MDBAnimation
 } from 'mdbreact';
 import './Home.css';
+import Carousel from 'react-bootstrap/Carousel'
 
 
 
@@ -61,7 +62,7 @@ class Home extends React.Component {
                   sapiente, fugiat! Commodi sequi non animi ea dolor molestiae,
                   quisquam iste, maiores. Nulla.
                 </h6>
-                
+               
               </MDBAnimation>
 
               
@@ -70,6 +71,7 @@ class Home extends React.Component {
             </MDBRow>
           </MDBContainer>
         </MDBView> }
+        
 
         
       </div>

@@ -32,8 +32,7 @@ class UserForm extends Component {
       this.state.password === "" ||
       this.state.rank === "" ||
       this.state.about === "" ||
-      this.state.perk === "" ||
-      this.state.groupId === "" 
+      this.state.perk === ""  
     ) {
       window.alert("Please input an User Name and Password");
     } else {
@@ -46,7 +45,7 @@ class UserForm extends Component {
         about: this.state.about,
         perk: this.state.perk,
         image: this.state.image,
-        groupId: this.state.groupId,
+        groupId: null,
       };
 
       // Create the user and redirect user to user list
@@ -120,18 +119,7 @@ class UserForm extends Component {
               />
               <label htmlFor="perk">Favorite Perks</label>
               
-              <select
-                className="form-control"
-                id="groupId"
-                value={this.state.groupId}
-                onChange={this.handleFieldChange}
-              >
-                {this.state.groups.map((group) => (
-                  <option key={group.id} value={group.id}>
-                    {group.name}
-                  </option>
-                ))}
-              </select>
+              
               
             </div>
             <div className="alignRight">

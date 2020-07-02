@@ -35,10 +35,10 @@ class UserEditForm extends Component {
       about: this.state.about,
       perk: this.state.perk,
       image: this.state.image,
-      groupId: this.state.groupId,
+      groupId: parseInt(this.state.groupId),
       id: this.props.match.params.userId,
     };
-
+        //Parseint allows 
     UserManager.update(editedUser).then(() =>
       this.props.history.push("/users")
     );
@@ -140,6 +140,7 @@ class UserEditForm extends Component {
               />
               <label htmlFor="perk">Favorite Perks</label>
               <label htmlFor="team">Team</label>
+
               <select
                 className="form-control"
                 id="groupId"

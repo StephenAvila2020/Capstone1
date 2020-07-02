@@ -8,7 +8,7 @@
       "about": "A.I. Constructed by Tony Stark. When in game, I primarily play solo, but I can come in clutch in SWF matches.",
       "perk": "Self Care, Spine Chill, Decisive Strike, Head On",
       "image": "https://mcuexchange.com/wp-content/uploads/2017/07/Vision_Forest.jpg",
-      "groupId": 2,
+      "groupId": 1,
       "id": 1
     },
     {
@@ -52,22 +52,28 @@
       "about": "New to this ",
       "perk": "Tony set up my account",
       "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2019/05/Chris-Evans-as-Captain-America-in-the-Quantum-Realm.jpg",
-      "groupId": 1,
+      "groupId": 2,
       "id": 7
-    }
-  ],
-  "usergroup": [
+    },
     {
-      "id": 1,
-      "GroupId": 1,
-      "UserId": 1,
-      "creator": true
+      "username": "dwight",
+      "email": "dwight@deadbydaylight.com",
+      "password": "123456",
+      "rank": "15",
+      "about": "I like to hide in lockers",
+      "perk": "locker based perks",
+      "image": "https://vignette.wikia.nocookie.net/deadbydaylight/images/1/17/Dwight_in_his_original_outfit.jpg/revision/latest?cb=20180813184923",
+      "groupId": 4,
+      "id": 8
     }
   ],
   "groups": [
     {
-      "id": 1,
-      "name": "Earth's Mightiest Heroes"
+      "groupName": "",
+      "details": "The Best in the Game.",
+      "ranks": "1-2 only",
+      "system": "PC MasterRace",
+      "id": 1
     },
     {
       "id": 2,
@@ -76,6 +82,32 @@
     {
       "id": 3,
       "name": "The Empire"
+    },
+    {
+      "name": "The Survivors",
+      "details": "The Best in the Game.",
+      "ranks": "1-2 only",
+      "system": "PC MasterRace",
+      "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2019/10/Dead-By-Daylight-Starting-Survivors.jpg",
+      "id": 4
+    }
+  ],
+  "achievements": [
+    {
+      "picture": "https://gamepedia.cursecdn.com/deadbydaylight_gamepedia_en/3/38/Ach_aBiteForTheEntity.jpg?version=54f1800ec02225ccd9623d2e2419dfde",
+      "id": 1,
+      "achievement": "A Bite For The Entity!",
+      "cardText": "Sacrifice a total of 100 Survivors.",
+      "url": "https://truesteamachievements.com/a158222/a-bite-for-the-entity-achievement",
+      "completed": false
+    },
+    {
+      "picture": "https://gamepedia.cursecdn.com/deadbydaylight_gamepedia_en/5/58/Ach_aFeastForTheEntity.jpg?version=976eec4a2f4c18c9b2930ea8a46fb078",
+      "id": 2,
+      "achievement": "A Feast For The Entity",
+      "cardText": "\tSacrifice a total of 1000 / 500 Survivors",
+      "url": "https://www.trueachievements.com/a234998/a-feast-for-the-entity-achievement",
+      "completed": false
     }
   ]
 }

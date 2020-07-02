@@ -52,6 +52,7 @@
   }
   .card-text {
     border: none;
+    color: white;
   }
  
 
@@ -60,6 +61,11 @@
 background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
 background-repeat: no-repeat;
 background-size: cover;
+ }
+
+ .card-title.h5 {
+   justify-content: center;
+   text-align: center;
  }
 
  
