@@ -17,7 +17,7 @@ class GroupCard extends Component {
               <button type="button"
         onClick={() => { this.props.history.push(`/groups/${this.props.group.id}`) }}>Group Members</button>
         </Card.Text>
-        <button type="button"  onClick={this.handleDelete}>Delete Group</button>
+        <button type="button" onClick={() => this.props.deleteGroup(this.props.group.id)}>DELETE!</button>
               <button
                 type="button"
                 onClick={() => {
