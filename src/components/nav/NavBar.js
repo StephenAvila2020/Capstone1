@@ -12,6 +12,7 @@ class NavBar extends Component {
     return (
       
         <nav>
+          <header>The Survival Guide</header>
           <ul className="container">
             <li><Link className="nav-link" to="/">News</Link></li>
             <li><Link className="nav-link" to="/users">My Profile</Link></li>

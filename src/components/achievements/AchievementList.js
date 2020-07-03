@@ -51,7 +51,7 @@ render(){
         >
       View Completed Achievements
   </button>
-  <h1>Achievements To Complete</h1>
+  <h1>Achievements</h1>
  {/* loops through array and prints single cards */}
 </section>
       <div className="container-cards">
