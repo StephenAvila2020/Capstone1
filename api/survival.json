@@ -1,12 +1,12 @@
 {
   "users": [
     {
-      "username": "dwight",
+      "username": "Dwight1",
       "email": "dwight@deadbydaylight.com",
       "password": "123456",
-      "rank": "15",
-      "about": "I like to hide in lockers",
-      "perk": "locker based perks",
+      "rank": "5",
+      "about": "I like to hide in lockers whenever I hear the slightest sound.",
+      "perk": "Prove Thyself, Leader, Head On, Spine Chill",
       "image": "https://vignette.wikia.nocookie.net/deadbydaylight/images/1/17/Dwight_in_his_original_outfit.jpg/revision/latest?cb=20180813184923",
       "groupId": 4,
       "id": 8
@@ -20,6 +20,14 @@
       "system": "PC MasterRace",
       "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2019/10/Dead-By-Daylight-Starting-Survivors.jpg",
       "id": 4
+    },
+    {
+      "groupName": "",
+      "details": "The best at killing. ",
+      "ranks": "1-5 only",
+      "system": "PC MasterRace",
+      "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2020/01/Dead-By-Daylight-Killers.jpg",
+      "id": 5
     }
   ],
   "achievements": [
@@ -29,7 +37,7 @@
       "achievement": "A Bite For The Entity!",
       "cardText": "Sacrifice a total of 100 Survivors.",
       "url": "https://truesteamachievements.com/a158222/a-bite-for-the-entity-achievement",
-      "completed": true
+      "completed": false
     },
     {
       "picture": "https://gamepedia.cursecdn.com/deadbydaylight_gamepedia_en/5/58/Ach_aFeastForTheEntity.jpg?version=976eec4a2f4c18c9b2930ea8a46fb078",
@@ -37,7 +45,7 @@
       "achievement": "A Feast For The Entity",
       "cardText": "\tSacrifice a total of 1000 / 500 Survivors",
       "url": "https://www.trueachievements.com/a234998/a-feast-for-the-entity-achievement",
-      "completed": true
+      "completed": false
     }
   ]
 }

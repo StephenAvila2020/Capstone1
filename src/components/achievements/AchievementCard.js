@@ -16,7 +16,7 @@ class AchievementCard extends Component {
     <Card.Title><span className="card-achievementname"><button className="favorite styled"
         type="button" onClick={() => {this.props.history.push(`/achievements/${this.props.achievement.id}/edit`)}}>
         {this.props.achievement.achievement}</button></span></Card.Title>
-    <Card.Text>
+    <Card.Text className="card">
     {this.props.achievement.cardText}
     </Card.Text>
     <form>

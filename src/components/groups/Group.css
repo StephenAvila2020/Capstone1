@@ -2,6 +2,46 @@ h1 {
     color:orangered;
     justify-content: center;
     text-align:center ;
-    background-color: black;;
+    background-color: black;
     font-family: Lucida;
+    
 }
+
+button {
+    background-color: rgb(253, 93, 0);
+    border: solid black 1px;
+    color: rgb(0, 2, 1);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 6px;
+    padding: .5em;
+    border-radius: 1px;
+    margin: .1em;
+  }
+
+  .text-muted{
+      color: white;
+  }
+  .container-cards{
+    background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc-kyfFHMBX/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/05/dead-by-daylight-4th-anniversary.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-color: black;
+  }
+  #root{
+background-color: black;
+  }
+
+  .section-content{
+      height: 15vh;
+  }
+  button.btn{
+      background-color:orangered;
+  }
+
+  p.card-text {
+      color: white;
+  }

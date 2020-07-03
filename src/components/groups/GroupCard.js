@@ -31,12 +31,11 @@ class GroupCard extends Component {
       <Card className="p-3">
     <blockquote className="blockquote mb-0 card-body">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-        erat a ante.
+        "Survivors can increase their chances of escape by taking care of each other:"
       </p>
-      <footer className="blockquote-footer">
-        <small className="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+      <footer className="card-stuff">
+        <small className="card-stuff">
+          Fog Whisperer Tips {""}<cite title="Source Title">Dead By Daylight</cite>
         </small>
       </footer>
     </blockquote>

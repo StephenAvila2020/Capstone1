@@ -1,8 +1,14 @@
 p.card-text {
     color: white ;
-},
+}
 
 button.btn {
     color: white;
     background-color: orangered;
+}
+.container-cards{
+    color: white;
+}
+.card-body{
+    color: white;
 }

@@ -36,41 +36,41 @@ class Home extends React.Component {
   
     return (
       <div id='classicformpage'>
-        <Router>
-        
-         </Router>
+        <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://s.yimg.com/os/creatr-uploaded-images/2020-05/95f51220-9f8e-11ea-9fbc-495d3c667575"
+      alt="First slide"
+    />
+    <Carousel.Caption>
 
-        { <MDBView>
-          <MDBMask className='d-flex justify-content-center align-items-center gradient' />
-          <MDBContainer
-            style={{ height: '100%', width: '100%', paddingTop: '1rem' }}
-            className='mt-5  d-flex justify-content-center align-items-center'
-          >
-            <MDBRow>
-              <MDBAnimation
-                type='fadeInLeft'
-                delay='.3s'
-                className='white-text text-center text-md-left col-md-6 mt-xl-5 mb-5'
-              > 
-                <h1 className='h1-responsive font-weight-bold'>
-                  The Entity Welcomes You!
-                </h1>
-                <hr className='hr-light' />
-                <h6 className='mb-4'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                  repellendus quasi fuga nesciunt dolorum nulla magnam veniam
-                  sapiente, fugiat! Commodi sequi non animi ea dolor molestiae,
-                  quisquam iste, maiores. Nulla.
-                </h6>
-               
-              </MDBAnimation>
+      <p ><a href="https://www.youtube.com/watch?time_continue=2&v=N8VGnRN5-mc&feature=emb_title">Pyramid Head Cometh</a></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://s3.deadbydaylight.com/data/4thanniversary-listing-share.png"
+      alt="Third slide"
+    />
 
-              
+    <Carousel.Caption>
+      <p><a href="https://deadbydaylight.com/en/news/4th-anniversary-event">Dead by Daylight 4th Anniversary Event.</a></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://theculturednerd.org/wp-content/uploads/2020/06/robbie-the-rabiit-1-1024x576.jpg"
+      alt="Third slide"
+    />
 
-             
-            </MDBRow>
-          </MDBContainer>
-        </MDBView> }
+    <Carousel.Caption>
+      <p><a href="https://deadbydaylight.com/en/news/silent-hill-collection-reveal">Silent Hill Collection Reveal.</a></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
         
 
         
