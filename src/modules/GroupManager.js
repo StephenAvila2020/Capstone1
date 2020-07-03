@@ -1,4 +1,4 @@
-const remoteURL = "https://the-survial-guide.herokuapp.com/"
+const remoteURL = "http://localhost:5002"
 
 export default {
   get(id) {
@@ -12,7 +12,7 @@ export default {
             .then(result => result.json())
 },
 delete(id) {
-  return fetch(`https://the-survial-guide.herokuapp.com/groups/${id}`, {
+  return fetch(`http://localhost:5002/groups/${id}`, {
       method: "DELETE"
   })
   .then(result => result.json())
