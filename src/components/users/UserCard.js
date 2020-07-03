@@ -19,7 +19,6 @@ class UserCard extends Component {
             </Card.Title>
             <Card.Text>
               <p>Email: {this.props.user.email}</p>
-              <p>Password: {this.props.user.password}</p>
               <p>Rank: {this.props.user.rank}</p>
               <p>About Me: {this.props.user.about}</p>
               <p>Favorite Perks: {this.props.user.perk}</p>

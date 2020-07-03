@@ -22,7 +22,7 @@
       "id": 4
     },
     {
-      "groupName": "",
+      "name": "The Killers",
       "details": "The best at killing. ",
       "ranks": "1-5 only",
       "system": "PC MasterRace",
@@ -45,7 +45,7 @@
       "achievement": "A Feast For The Entity",
       "cardText": "\tSacrifice a total of 1000 / 500 Survivors",
       "url": "https://www.trueachievements.com/a234998/a-feast-for-the-entity-achievement",
-      "completed": true
+      "completed": false
     }
   ]
 }
